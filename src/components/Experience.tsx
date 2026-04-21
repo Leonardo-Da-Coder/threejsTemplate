@@ -3,13 +3,16 @@ import { OrbitControls, Stage } from "@react-three/drei";
 export const Experience = () => {
     return (
         <>
-            <Stage 
-            intensity={1.5} 
-            environment="city" 
-            shadows={{ type: "accumulative", color: "#d9afd9", colorBlend: 2, opacity: 2 }}
-            adjustCamera={8}
+            <Stage
+                preset={"upfront"}
+                intensity={1.5}
+                environment="city"
+                shadows={{ type: "accumulative", color: "#d9afd9", colorBlend: 2, opacity: 2 }}
+                adjustCamera={3
+                }
+
             >
-                <mesh castShadow>
+                <mesh castShadow receiveShadow>
                     <meshNormalMaterial />
                     <boxGeometry />
                 </mesh>
@@ -17,9 +20,9 @@ export const Experience = () => {
             <OrbitControls
                 makeDefault
                 minPolarAngle={0}
-                maxPolarAngle={Math.PI /  2}
+                maxPolarAngle={Math.PI / 2}
                 enablePan={false}
             />
         </>
-    )
-}
+    );
+};
