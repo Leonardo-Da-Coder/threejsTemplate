@@ -7,7 +7,7 @@ export const Experience = () => {
                 preset={"upfront"}
                 intensity={1.5}
                 environment="city"
-                shadows={{ type: "accumulative", color: "#d9afd9", colorBlend: 2, opacity: 2 }}
+                shadows={{ type: "contact", color: "#d9afd9", colorBlend: 2, opacity: 2 }}
                 adjustCamera={3
                 }
 
