@@ -2,7 +2,6 @@
 import { Canvas } from "@react-three/fiber"
 import { Experience } from "./components/Experience"
 import { useControls } from "leva"
-import { Stage } from "@react-three/drei"
 import { Suspense } from "react"
 
 function App() {
